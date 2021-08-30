@@ -1,0 +1,112 @@
+
+iniciando git 
+    git init
+
+Login e senha para alguns casos
+    git config --local user.name "Seu_Nome_Aqui"
+    git config --local user.email "seuemail@exemplo.com"
+
+mostra todos os arquivos da pasta
+    ls -al
+
+******* Adiciona/Atualiza o arquivo no repositorio  [Usando Constantemente]
+    git add {nome do documneto}
+    
+    git commit -am "{mensagem do commit}     // ja adiciona e manda msg em uma linha só  -am = add & msg
+
+Adiciona toda a pasta
+    git add .
+******* Comentar o codigo
+    git commit -m "{comentario}
+
+******* Olha o Log (ver o ponto)
+    git Log
+
+******* Mostar o status, alteração e afins
+    git status
+    {
+        untracked files -> n esta no adicionado no git
+    }
+
+Limpa Tela
+    clear
+
+Mostra o q foi feito no commit
+    git show {numero do commit}
+    git show    
+    {
+        mostra o ultimo ponto na historia
+    }
+
+----------------------------      branch     -------------------------
+CRIAR RAMIFICAÇÂO - semparar versoes
+    git branch {nome da branch}              /// git checkout -b 'teste'  << cria uma nova branch e ja muda pra ela
+
+Mudar de ramificaçao
+    git checkout {nome da ramificação}
+
+Ver todas as ramificaçoes
+    git branch
+
+Unir ramificaçoes
+    git merge {nome da ramificaçao q vai ser unida (acho eu q é com a que esta em uso)}
+
+Deletar ramificação
+    git branch -D {nome da ramificação}
+
+git checkout {numero do commit} -- {nome do arquivo ex package.json}
+
+--------- Colocar na nuvem -----------
+Linkar o repositorio na nuvem com o local
+    git remote add [origin] {endereço do repositorio}
+        EX
+            git remote add origin https://github.com/philipgomesph/aula_Git1.git   //adicionado GitHub
+            git remote add origin_lab https://gitlab.com/philip.gomesph/aula_Git1.git  //adicionado GitLab
+
+
+Empurra pra nuvem   
+    git push -u origin master  //a primeira vez tem q criar o master
+
+    git push 
+
+
+
+========== Push an existing Git repository
+Mudar o repositorio remoto (GitHub p/ GitLab e vice versa)
+Ex
+    cd existing_repo
+    git remote rename origin old-origin
+    git remote add origin https://gitlab.com/philip.gomesph/aula-git.git  //No caso estou mudando do GitHub p/ GitLab
+    git push -u origin --all
+    git push -u origin --tags
+
+
+>Codigo gerado pelo GitHub ex:
+echo "# Inicio-estudos-PWeb" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/philipgomesph/Inicio-estudos-PWeb.git
+git push -u origin main
+
+
+
+------------ Baixar Projeto da Nuvem --------------------------
+
+Clona/Baixa/Atualiza o Projeto
+    git clone {link do projeto, disponibilizado pelo Lab ou HuB}
+
+Baixar Atualizaçoes
+    git pull
+
+
+
+=================================
+link para aula:
+    https://www.youtube.com/watch?v=2alg7MQ6_sI&list=WL&index=2&t=20s
+
+
+
+completo
+    
