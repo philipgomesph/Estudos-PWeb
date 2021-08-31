@@ -9,13 +9,15 @@ Login e senha para alguns casos
 mostra todos os arquivos da pasta
     ls -al
 
+Adiciona toda a pasta
+    git add .
+
 ******* Adiciona/Atualiza o arquivo no repositorio  [Usando Constantemente]
     git add {nome do documneto}
     
     git commit -am "{mensagem do commit}     // ja adiciona e manda msg em uma linha só  -am = add & msg
 
-Adiciona toda a pasta
-    git add .
+
 ******* Comentar o codigo
     git commit -m "{comentario}
 

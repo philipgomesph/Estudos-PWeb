@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 3 - Pweb</title>
+</head>
+<body>
+    <strong>Todos os conteudo ficam entre < >  </strong><br><br>
+    <a href="https://www.youtube.com/watch?v=qRbYjPOBSJs&t=9s">Link para aula 3 </a>
+    <p>Tag para tabela "table" </p>
+    <p>cabeçalho = "thead" , corpo*(importante) = "tbody", rodapé = "tfoot" </p>
+    <p>Exemplo de tablea</p>
+    <br><hr><br>
+
+    <!-- TABELA -->
+    <table summary="Resumo do que trata a tabela" border="1 "> <!-- borde para colocar borda na tabela (N SE USA MAIS ISSO PF)-->
+        <caption>Minha linda tabela</caption><!-- Titulo da tabela -->
+        <thead> <!-- Cabecalho -->
+            <tr> <!-- Conteudo -->
+                <th scope="col">Coluna1</th>  
+                <th scope="col">Coluna2</th>
+                <th scope="col">Coluna3</th>
+            </tr>
+        </thead>
+        <tbody> <!-- Conteudo da tabela  -->
+            <tr>
+                <td>valor11</td> <!-- Conteudo do condeudo da tabela -->
+                <td>valor12</td>
+                <td>valor13</td>
+            </tr>
+            <tr>
+                <td>valor21</td>
+                <td rowspan="2">valor22</td> <!-- pegando valor da linha de baixo -->
+                <td>valor23</td>
+            </tr>
+            <tr>
+                <td>valor31</td>
+                <!-- <td>valor32</td> -->
+                <td>valor33</td>
+            </tr>
+        </tbody>
+        <tfoot>  <!-- Rodapé da tabela -->
+            <tr>
+                <td>Total:</td>
+                <td colspan="2">R$ 1000,00</td>  <!-- utiliza o espaço da coluna 2 -->
+            </tr>
+        </tfoot>
+    </table>
+<br><hr><br>
+
+<!-- FORMULARIO -->
+<strong>Formulario </strong>
+<form action="endereco" method="get">  <!-- endereco é pra onde vai a info (backend) -->
+
+    <label for="id_nome">Nome:</label>  <!-- for liga os dois elementos-->
+
+    <input type="text" name="nome" id="id_nome" autofocus required>  <!-- input é input ne -->  <!-- autofocus é pro cursor começar na page aqui--> <!-- required = obrigatorio -->
+    <br><br>
+   
+    <button type="submit">Texto <img src="sabotage.png" alt="Enviar" width="150 "height="150"></button><br>
+    
+    <input type="text" denreço = "endereço" placeholder="Digite o endereço"> <br><!-- Place holder, é o escrito de fundo q fica na box-->
+
+    <input type="submit" value="Enviar"><br> <!-- botao,acho q é pra enviar pro backend -->
+    <br><input id="botao_id" type="reset" value="Limpar"><br> <!-- volta para o estado de carregamento da pagina -->
+
+    <input id="botao_id" name="arquivo" type="file" accept=".doc"> <!-- Botao de upload, da pra escolher o tipo do arquivo a ser anexado -->
+    <!-- Ele aceita video, audios e imagem, === audio/* ou video/* image/* -->
+    <br><input id="botao_id" name="arquivo" type="file" accept="image/*", .pdf>  <!-- assim ele aceita os dois tipos-->
+    <br><strong>Caixa numerica </strong>
+    <br><label for="numero0_id">Caixa padrao</label><input id="numero0_id" type="number" name="numero1">
+    <br><label for="numero1_id">Caixa com limite = 0 a 10 </label><input id="numero1_id" type="number" name="numero1" min="0" max="10" step="1"><br>
+    <label for="id_email">Digite seu email </label><input id="id_email" name="email" type="email">
+</form> 
+<br>
+<br><br><form action="endereco" method="post "></form>
+<input type="text" id="id_do_campo" name="nome_do_campo"> <!-- id e name é opcional -->
+<hr>
+</body>
+</html>
