@@ -58,8 +58,8 @@
     <br><br>
    
     <button type="submit">Texto <img src="sabotage.png" alt="Enviar" width="150 "height="150"></button><br>
-    
-    <input type="text" denreço = "endereço" placeholder="Digite o endereço"> <br><!-- Place holder, é o escrito de fundo q fica na box-->
+    <br><label for="box_placeholder">Usando placeholder (escrito ao fundo) </label>
+    <input id=box_placeholder type="text" denreço = "endereço" placeholder="Digite o endereço"> <br><!-- Place holder, é o escrito de fundo q fica na box-->
 
     <input type="submit" value="Enviar"><br> <!-- botao,acho q é pra enviar pro backend -->
     <br><input id="botao_id" type="reset" value="Limpar"><br> <!-- volta para o estado de carregamento da pagina -->
@@ -67,14 +67,180 @@
     <input id="botao_id" name="arquivo" type="file" accept=".doc"> <!-- Botao de upload, da pra escolher o tipo do arquivo a ser anexado -->
     <!-- Ele aceita video, audios e imagem, === audio/* ou video/* image/* -->
     <br><input id="botao_id" name="arquivo" type="file" accept="image/*", .pdf>  <!-- assim ele aceita os dois tipos-->
-    <br><strong>Caixa numerica </strong>
-    <br><label for="numero0_id">Caixa padrao</label><input id="numero0_id" type="number" name="numero1">
-    <br><label for="numero1_id">Caixa com limite = 0 a 10 </label><input id="numero1_id" type="number" name="numero1" min="0" max="10" step="1"><br>
-    <label for="id_email">Digite seu email </label><input id="id_email" name="email" type="email">
-</form> 
+    
+    
+    <br><hr>
+    <br><strong>Caixas </strong>
+    <br><label for="numero0_id">Caixa numerica padrao</label><input id="numero0_id" type="number" name="numero1">
+    <br><label for="numero1_id">Caixa numerica com limite = 0 a 10 </label><input id="numero1_id" type="number" name="numero1" min="0" max="10" step="1"><br>
+    <label for="id_email">Digite seu email </label><input id="id_email" name="email" type="email">   <br>
+    <input id="id_hora" name="hora" type = "time"> <br> <!-- Input hora -->
+    <input id="id_data_hora_id" name="data-hora" type="datetime-local"><br> <!-- input de data e hora (POUCO USADO PQ É FEIAO )-->
+    <br><label for="senha">Caixa para senha: </label><input name="senha" type="password"> 
+    <br><input name="valor_escondido" type="hidden" value="Dado_escondido"> <!-- o Usuario nao ve essa parte, porem é util para mandar dados para o Backend-->
+    
+    <br><hr>
+    <strong>Checkbox</strong><br>
+    <input id="checkbox0" type="checkbox" value="valor_checkbox" name="nome_checkbox" ><label for="checkbox0">Texto CB0</label> <!-- USar label para lincar com CB-->
+    <br><input  type="checkbox" value="valor_checkbox" name="nome_checkbox" >Texto checkbox1
+    <br><input  type="checkbox" value="valor_checkbox" name="nome_checkbox" >Texto checkbox2
+    <br><input  type="checkbox" value="valor_checkbox" name="nome_checkbox" >Texto checkbox3 <br>
+    <br><hr>
+    <strong>Button Radio</strong><br>
+    
+    <input id="id_radio" name="sexo" type="radio" value="masculino" checked> <!-- geralmente começa com 1 marcado -->
+    <label for="id_radio">Masculino</label><br>
+    <input id="id_feminino" name="sexo" type="radio" value="feminino" >
+    <label for="id_feminino">Femino</label><br>
+    <br><hr>
+    <p>Input pra cor</p>
+    <input type="color"><br><hr>
+
+    <strong>Lista drop-down (Select) </strong><br><br>
+
+    <label for="estados_id">Selecione o seu estado</label>
+    <select id="estados_id" name="estado">
+        <option hidden disabled selected value>Selecione a UF</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espirito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+    </select>
+
+    <br><br>
+    <label for="estados_id2">Outro exemplo </label>
+    <select id="estados_id2" name="estado">
+        <option hidden disabled selected value>Selecione a UF</option>
+        <optgroup label="Região Sudeste">
+            <option value="ES">Espirito Santo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+        </optgroup>
+        <optgroup label="Região Norte">
+            <option value="AM">Amazonas</option>
+            <option value="RR">Roraima</option>
+            <option value="AP">Amapá</option>
+            <option value="PA">Pará</option>
+            <option value="TO">Tocantins</option>
+            <option value="RO">Rondônia</option>
+            <option value="AC">Acre</option>
+        </optgroup>
+        <optgroup label="Região Nordeste">
+            <option value="MA">Maranhão</option>
+            <option value="PI">Piauí</option>
+            <option value="CE">Ceará</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PB">Paraíba</option>
+            <option value="SE">Sergipe</option>
+            <option value="AL">Alagoas</option>
+            <option value="BA">Bahia</option>
+        </optgroup>
+        <optgroup label="Região Centro-Oeste">
+            <option value="GO">Goiás</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+        </optgroup>
+        <optgroup label="Região Sul">
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>            
+        </optgroup>
+        <option value="DF">Distrito Federal</option>
+    </select><br>
+<br><hr>
+<strong>FieldSet</strong>
+<fieldset>
+    <legend>Sexo</legend>
+    <input id="masculino_id" name="sexo" type="radio" value="masculino" checked>
+    <label for="masculino_id">Masculino</label>
+    <input id="feminino_id" name="sexo" type="radio" value="feminino">
+    <label for="feminino_id">Feminino</label>
+</fieldset>
+<br><hr>
+<strong>Div</strong>
+<p>Div serve para agrupar elementos</p>
+<label for="id_div">Label da div</label>
+<div id=id_div>
+
+    <p>Exemplo meramente inlustrativo </p>
+    <strong>Caixas </strong>
+    <br><label for="numero0_id">Caixa numerica padrao</label><input id="numero0_id" type="number" name="numero1">
+    <br><label for="numero1_id">Caixa numerica com limite = 0 a 10 </label><input id="numero1_id" type="number" name="numero1" min="0" max="10" step="1"><br>
+    <label for="id_email">Digite seu email </label><input id="id_email" name="email" type="email">   <br>
+    <input id="id_hora" name="hora" type = "time"> <br> <!-- Input hora -->
+    <input id="id_data_hora_id" name="data-hora" type="datetime-local"><br> <!-- input de data e hora (POUCO USADO PQ É FEIAO )-->
+    <br><label for="senha">Caixa para senha: </label><input name="senha" type="password"> 
+    <br><input name="valor_escondido" type="hidden" value="Dado_escondido"> <!-- o Usuario nao ve essa parte, porem é util para mandar dados para o Backend-->
+    
+</div>
+<br><hr>
+<strong>Span</strong>
+<p>Agrupa elementos, porem a nivel de linha</p>
+<span><p>Exemplo meramente inlustrativo </p>
+    <strong>Caixas </strong>
+    <br><label for="numero0_id">Caixa numerica padrao</label><input id="numero0_id" type="number" name="numero1">
+    <br><label for="numero1_id">Caixa numerica com limite = 0 a 10 </label><input id="numero1_id" type="number" name="numero1" min="0" max="10" step="1"><br>
+    <label for="id_email">Digite seu email </label><input id="id_email" name="email" type="email">   <br>
+    <input id="id_hora" name="hora" type = "time"> <br> <!-- Input hora -->
+    <input id="id_data_hora_id" name="data-hora" type="datetime-local"><br> <!-- input de data e hora (POUCO USADO PQ É FEIAO )-->
+    <br><label for="senha">Caixa para senha: </label><input name="senha" type="password"> 
+    <br><input name="valor_escondido" type="hidden" value="Dado_escondido"> <!-- o Usuario nao ve essa parte, porem é util para mandar dados para o Backend--></span>
+<br><hr>
+<br><hr>
+<strong>Outros tipos de agrupamentos </strong>
+<p>Header,main, footer, nav, article, aside </p>
+<p>Header = cabecalho</p>
+<p>Main = Conteudo principal</p>
+<p>Footer = Rodapé </p>
+<p>Nav = navegação (links da pagina) </p>
+<p>Aside = Conteudos paralelos </p>
+<hr><br>
+
+
+<strong>Tag para audio e video </strong><br>
+<p>Sem audio e video no codigo </p>
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    Seu navegador não suporta o elemento audio.
+</audio>
 <br>
-<br><br><form action="endereco" method="post "></form>
-<input type="text" id="id_do_campo" name="nome_do_campo"> <!-- id e name é opcional -->
-<hr>
+<video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Seu navegador não suporta o elemento video.
+</video>
+<source src="arquivo.ogg" type="video/ogg"> <source src="arquivo.webm" type="video/webm">
+<source src="arquivo.mp3" type="audio/mpeg"> <source src="arquivo.wav" type="audio/wav">
+
+<br><hr>
+<br>
+
+<a href="https://youtu.be/qRbYjPOBSJs?t=7168">Link Aula 3 - Inicio do CSS </a>
+<br><br><hr>
 </body>
 </html>
