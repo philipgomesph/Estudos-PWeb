@@ -12,6 +12,7 @@ mostra todos os arquivos da pasta
 Adiciona toda a pasta
     git add .
 
+
 ******* Adiciona/Atualiza o arquivo no repositorio  [Usando Constantemente]
     git add {nome do documneto}
     
@@ -108,6 +109,12 @@ Baixar Atualizaçoes
 link para aula:
     https://www.youtube.com/watch?v=2alg7MQ6_sI&list=WL&index=2&t=20s
 
+
+ORDEM
+    git init
+    git add .
+    git commit -am "{mensagem do commit}
+    git push
 
 
 completo
