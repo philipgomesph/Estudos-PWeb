@@ -19,7 +19,7 @@
           <thead>
             <tr>
               <th>Dados do bolsista</th>
-              <th>(*) Campos Obrigatórios</th>
+              <th width="312" >(*) Campos Obrigatórios</th>
             </tr>
           </thead>
           <tbody>
@@ -119,6 +119,7 @@
                   name="estado_civil"
                   id="id_Estado_Civil"
                   value="Casado"
+                  required
                 />
                 <label for="id_Estado_Civil"> Casado </label><br />
 
@@ -127,6 +128,7 @@
                   name="estado_civil"
                   id="id_Estado_Civil"
                   value="Separado"
+                  required
                 />
                 <label for="id_Estado_Civil"> Separado </label><br />
 
@@ -135,6 +137,7 @@
                   name="estado_civil"
                   id="id_Estado_Civil"
                   value="Divorciado"
+                  required
                 />
                 <label for="id_Estado_Civil"> Divorciado </label><br />
 
@@ -143,6 +146,7 @@
                   name="estado_civil"
                   id="id_Estado_Civil"
                   value="Viuvo"
+                  required
                 />
                 <label for="id_Estado_Civil"> Viuvo </label><br />
 
@@ -151,6 +155,7 @@
                   name="estado_civil"
                   id="id_Estado_Civil"
                   value="União Estável"
+                  required
                 />
                 <label for="id_Estado_Civil"> União Estável </label>
               </td>
@@ -158,14 +163,13 @@
           </tbody>
         </table>
 
-
         <!-- Tabela Banco -->
         <div>
           <table border="1">
             <thead>
               <tr>
-                <th>Dados Bancários</th>
-                <th></th>
+                <th width="157" >Dados Bancários</th>
+                <th width="313" ></th>
               </tr>
             </thead>
             <tbody>
@@ -217,24 +221,174 @@
                 </td>
               </tr>
               <tr>
-                  <td><label for="id_Municipio_atuacao">Municipio de atuação*</label></td>
-                  <td><input type="text" name="municipio_atuacao" id="id_Municipio_atuacao"></td>
+                <td>
+                  <label for="id_Municipio_atuacao"
+                    >Municipio de atuação*</label
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="municipio_atuacao"
+                    id="id_Municipio_atuacao"
+                    required
+                  />
+                </td>
               </tr>
               <tr>
-                  <td>
-                      <label for="id_NrAgencia">Nº da agencia do Banco</label>
-                  </td>
-                  <td>
-                      <input type="number" name="nro_agencia" id="id_NrAgencia">
-                  </td>
+                <td>
+                  <label for="id_NrAgencia">Nº da agencia do Banco</label>
+                </td>
+                <td>
+                  <input type="number" name="nro_agencia" id="id_NrAgencia" />
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div>
-            <table border="1">
 
-            </table>
+        <!-- Tabela Documentos -->
+        <div>
+          <table border="1">
+            <thead>
+              <tr>
+                <th width="157">Documentos</th>
+                <th width="313" > </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><label for="id_Doc_Tipo">Tipo</label></td>
+                <td>
+                  <input type="radio" name="doc_Tipo" id="id_Doc_Tipo" value="RG" checked>
+                  <label for="id_Doc_Tipo">RG</label>
+                  <input type="radio" name="doc_Tipo" id="id_Doc_Tipo" value="CPF" >
+                  <label for="id_Doc_Tipo">CPF</label><br>
+                  <input type="radio" name="doc_Tipo" id="id_Doc_Tipo" value="Reservista" >
+                  <label for="id_Doc_Tipo">Reservista</label>
+                  <input type="radio" name="doc_Tipo" id="id_Doc_Tipo" value="Título" >
+                  <label for="id_Doc_Tipo">Titulo</label>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="id_Doc_Num">Numero* </label></td>
+                <td><input type="number" name="doc_Num" id="id_Doc_Num" required></td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="id_Doc_DataExpedicao">Data de expedição*</label></td>
+                <td>
+                  <input type="date" name="doc_dataExpedicao" id="id_Doc_DataExpedicao" required>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="id_Doc_OrgaoExpedidor">Órgão expedidor*</label></td>
+                <td><input type="text" name="doc_OrgaoExpedidor" id="id_Doc_OrgaoExpedidor" required></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <!-- TABELA ENDEREÇO -->
+        <div>
+          <table border="1">
+            <thead>
+              <tr>
+                <th width="157">Endereço</th><th  ></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label for="id_End_Tipo">Tipo*</label>
+                </td>
+                <td><input type="text" name="end_Tipo" id="id_End_Tipo" required></td>
+              </tr>
+              <tr>
+                <td><label for="id_End_CEP">CEP*</label></td>
+                <td><input type="text" name="end_CEP" id="id_End_CEP" required></td>
+              </tr>
+              <tr>
+                <td><label for="id_End_Logradouro">Logradouro*</label></td>
+                <td><input type="text" name="end_Logradouro" id="id_End_Logradouro" required></td>
+              </tr>
+              <tr>
+                <td><label for="id_End_Bairro">Bairro*</label></td>
+                <td><input type="text" name="end_Bairro" id="id_End_Bairro" required></td>
+              </tr>
+              <tr>
+                <td><label for="id_End_Complemento">Complemento*</label></td>
+                <td><textarea name="end_Complemento" id="id_End_Complemento" cols="42" rows="5"></textarea></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tabela Telefones-->
+        <div>
+          <table border="1">
+            <thead>
+              <tr>
+                <th width="157" >Telefones</th>
+                <th width="315" ></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label for="id_Tel0">Tipo*</label>
+                </td>
+                <td>
+                  <input type="radio" name="tel_0" id="id_Tel0" value="Residencial" checked>
+                  <label for="id_Tel0">Residencial</label>
+
+                  <input type="radio" name="tel_0" id="id_Tel0" value="Comercial" >
+                  <label for="id_Tel0">Comercial</label>
+
+                  <input type="radio" name="tel_0" id="id_Tel0" value="Celular" >
+                  <label for="id_Tel0">Celular</label>
+
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="id_Tel_Num0">Numero</label>
+                </td>
+                <td><input type="number" name="tel_num" id="id_Tel_Num0" placeholder="(xx)X XXXX-XXXX" required></td>
+              </tr>
+
+              
+
+              <tr>
+                <td>
+                  <label for="id_Tel1">Tipo*</label>
+                </td>
+                <td>
+                  <input type="radio" name="tel_1" id="id_Tel1" value="Residencial" checked>
+                  <label for="id_Tel1">Residencial</label>
+
+                  <input type="radio" name="tel_1" id="id_Tel1" value="Comercial" >
+                  <label for="id_Tel1">Comercial</label>
+
+                  <input type="radio" name="tel_1" id="id_Tel1" value="Celular" >
+                  <label for="id_Tel1">Celular</label>
+
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="id_Tel_Num1">Numero</label>
+                </td>
+                <td><input type="number" name="tel_num" id="id_Tel_Num1" placeholder="(xx)X XXXX-XXXX"></td>
+              </tr>
+
+              <tr>
+                <th><label for="email"> <strong>E-mail*</strong> </label></th>
+                <td><input type="text" required></td>
+              </tr>
+              
+            </tbody>
+          </table>
         </div>
         <input type="submit" value="Enviar" /><br />
       </form>
