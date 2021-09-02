@@ -68,7 +68,7 @@
     <!-- Ele aceita video, audios e imagem, === audio/* ou video/* image/* -->
     <br><input id="botao_id" name="arquivo" type="file" accept="image/*", .pdf>  <!-- assim ele aceita os dois tipos-->
     
-    
+    <!-- CAIXAS -->
     <br><hr>
     <br><strong>Caixas </strong>
     <br><label for="numero0_id">Caixa numerica padrao</label><input id="numero0_id" type="number" name="numero1">
@@ -78,14 +78,18 @@
     <input id="id_data_hora_id" name="data-hora" type="datetime-local"><br> <!-- input de data e hora (POUCO USADO PQ É FEIAO )-->
     <br><label for="senha">Caixa para senha: </label><input name="senha" type="password"> 
     <br><input name="valor_escondido" type="hidden" value="Dado_escondido"> <!-- o Usuario nao ve essa parte, porem é util para mandar dados para o Backend-->
-    
     <br><hr>
+
+    <!-- Checkbox -->
     <strong>Checkbox</strong><br>
     <input id="checkbox0" type="checkbox" value="valor_checkbox" name="nome_checkbox" ><label for="checkbox0">Texto CB0</label> <!-- USar label para lincar com CB-->
     <br><input  type="checkbox" value="valor_checkbox" name="nome_checkbox" >Texto checkbox1
     <br><input  type="checkbox" value="valor_checkbox" name="nome_checkbox" >Texto checkbox2
     <br><input  type="checkbox" value="valor_checkbox" name="nome_checkbox" >Texto checkbox3 <br>
     <br><hr>
+
+
+    <!-- BUTTON RADIO -->
     <strong>Button Radio</strong><br>
     
     <input id="id_radio" name="sexo" type="radio" value="masculino" checked> <!-- geralmente começa com 1 marcado -->
@@ -96,6 +100,7 @@
     <p>Input pra cor</p>
     <input type="color"><br><hr>
 
+    <!-- DROP-DOWN -->
     <strong>Lista drop-down (Select) </strong><br><br>
 
     <label for="estados_id">Selecione o seu estado</label>
@@ -173,6 +178,9 @@
         <option value="DF">Distrito Federal</option>
     </select><br>
 <br><hr>
+
+
+<!-- FIELDSET -->
 <strong>FieldSet</strong>
 <fieldset>
     <legend>Sexo</legend>
@@ -182,6 +190,10 @@
     <label for="feminino_id">Feminino</label>
 </fieldset>
 <br><hr>
+
+
+
+<!-- DIV -->
 <strong>Div</strong>
 <p>Div serve para agrupar elementos</p>
 <label for="id_div">Label da div</label>

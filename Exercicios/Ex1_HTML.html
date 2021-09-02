@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex1_HTML</title>
+  </head>
+  <body>
+    <h1>Lista de Exercicios de HTML</h1>
+    <br />
+    <h3>Formulario</h3>
+    <br />
+    <!-- Tabela Dados Pessoa -->
+    <div>
+      <form action="formulario" method="POST">
+        <table summary="Formualario bolsista IFTM" border="1">
+          <caption>
+            Formualario bolsista IFTM
+          </caption>
+          <thead>
+            <tr>
+              <th>Dados do bolsista</th>
+              <th>(*) Campos Obrigatórios</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label for="id_CPF">CPF* </label></td>
+              <td><input type="text" name="cpf" id="id_CPF" required /></td>
+            </tr>
+            <tr>
+              <td><label for="id_NOME">NOME*</label></td>
+              <td><input type="text" name="nome" id="id_NOME" required /></td>
+            </tr>
+            <tr>
+              <td><label for="id_UF">UF Naturalidade*</label></td>
+              <td>
+                <select id="id_UF" name="estado" required>
+                  <option hidden disabled selected value>Selecione a UF</option>
+                  <optgroup label="Região Sudeste">
+                    <option value="ES">Espirito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                  </optgroup>
+                  <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="RR">Roraima</option>
+                    <option value="AP">Amapá</option>
+                    <option value="PA">Pará</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="AC">Acre</option>
+                  </optgroup>
+                  <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                  </optgroup>
+                  <optgroup label="Região Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                  </optgroup>
+                  <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                  </optgroup>
+                  <option value="DF">Distrito Federal</option></select
+                ><br />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="id_Municipio">Município naturalidade*</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="municipio"
+                  id="id_Municipio"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="id_Data_Nascimento">Data de nascimento*</label>
+              </td>
+              <td>
+                <input
+                  type="date"
+                  name="data_nascimento"
+                  id="id_Data_Nascimento"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="id_Estado_Civil">Estado civil*</label></td>
+              <td>
+                <!-- width="200" height="100" -->
+                <input
+                  type="radio"
+                  name="estado_civil"
+                  id="id_Estado_Civil"
+                  value="Solteiro"
+                  required
+                  checked
+                />
+                <label for="id_Estado_Civil"> Solteiro </label><br />
+
+                <input
+                  type="radio"
+                  name="estado_civil"
+                  id="id_Estado_Civil"
+                  value="Casado"
+                />
+                <label for="id_Estado_Civil"> Casado </label><br />
+
+                <input
+                  type="radio"
+                  name="estado_civil"
+                  id="id_Estado_Civil"
+                  value="Separado"
+                />
+                <label for="id_Estado_Civil"> Separado </label><br />
+
+                <input
+                  type="radio"
+                  name="estado_civil"
+                  id="id_Estado_Civil"
+                  value="Divorciado"
+                />
+                <label for="id_Estado_Civil"> Divorciado </label><br />
+
+                <input
+                  type="radio"
+                  name="estado_civil"
+                  id="id_Estado_Civil"
+                  value="Viuvo"
+                />
+                <label for="id_Estado_Civil"> Viuvo </label><br />
+
+                <input
+                  type="radio"
+                  name="estado_civil"
+                  id="id_Estado_Civil"
+                  value="União Estável"
+                />
+                <label for="id_Estado_Civil"> União Estável </label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <!-- Tabela Banco -->
+        <div>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Dados Bancários</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><label for="id_UF_Bank">UF Naturalidade*</label></td>
+                <td>
+                  <select id="id_UF_Bank" name="estado_bank" required>
+                    <option hidden disabled selected value>
+                      Selecione a UF
+                    </option>
+                    <optgroup label="Região Sudeste">
+                      <option value="ES">Espirito Santo</option>
+                      <option value="MG">Minas Gerais</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Norte">
+                      <option value="AM">Amazonas</option>
+                      <option value="RR">Roraima</option>
+                      <option value="AP">Amapá</option>
+                      <option value="PA">Pará</option>
+                      <option value="TO">Tocantins</option>
+                      <option value="RO">Rondônia</option>
+                      <option value="AC">Acre</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                      <option value="MA">Maranhão</option>
+                      <option value="PI">Piauí</option>
+                      <option value="CE">Ceará</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                      <option value="PE">Pernambuco</option>
+                      <option value="PB">Paraíba</option>
+                      <option value="SE">Sergipe</option>
+                      <option value="AL">Alagoas</option>
+                      <option value="BA">Bahia</option>
+                    </optgroup>
+                    <optgroup label="Região Centro-Oeste">
+                      <option value="GO">Goiás</option>
+                      <option value="MT">Mato Grosso</option>
+                      <option value="MS">Mato Grosso do Sul</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                      <option value="PR">Paraná</option>
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                    <option value="DF">Distrito Federal</option></select
+                  ><br />
+                </td>
+              </tr>
+              <tr>
+                  <td><label for="id_Municipio_atuacao">Municipio de atuação*</label></td>
+                  <td><input type="text" name="municipio_atuacao" id="id_Municipio_atuacao"></td>
+              </tr>
+              <tr>
+                  <td>
+                      <label for="id_NrAgencia">Nº da agencia do Banco</label>
+                  </td>
+                  <td>
+                      <input type="number" name="nro_agencia" id="id_NrAgencia">
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+            <table border="1">
+
+            </table>
+        </div>
+        <input type="submit" value="Enviar" /><br />
+      </form>
+    </div>
+  </body>
+</html>
