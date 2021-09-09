@@ -1,13 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 4 - CSS</title>
-    <p></p>
-    <strong>Aula 4 - CSS</strong>
-</head>
-<body>
-    <p><a href="https://www.youtube.com/watch?v=Gq2PrHd5YqM&t=4s">Link para aula 4 - CSS Inicio BOX Model </a></p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 4</title>
+    <p><strong>Aula 4 - CSS </strong></p>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <!--  AQUI QUE CARREGA O CSS -->
+  </head>
+  <body style="background-color: whitesmoke">
+    <a href="https://www.youtube.com/watch?v=Gq2PrHd5YqM&t=4s">Aula PWeb</a>
+    <br />
+    <a
+      href="https://www.w3schools.com/css/exercise.asp?filename=exercise_background1"
+      >Exercicios w3schools</a
+    >
+    <br /><br />
+    <strong>CSS</strong>
+    <p>
+      Para "linkar" um arquivo e ou biblioteca de CSS bastar colocar "link
+      rel="stylesheet" href="index.css" type="text/css" no head
+    </p>
+    <br />
+    <hr />
+    <br />
+    <p>Exemplo de CSS</p>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <pre>
+        p {
+            color: red;
+          }
+
+          assim muda a cor de todos os paragrafos"p" para vermelho 
+    </pre>
+    <br />
+    <hr />
+    <br />
+
+    <h1>This is a Heading</h1>
+    <p id="para1">This is a paragraph. -----Esse paragrafo tem ID "para1</p>
+    <p>This is another paragraph.</p>
+
+    <pre>
+        #para1 { 
+        color: green;
+
+        # = seleciona apenas quem tem o id desejado 
+      }</pre
+    >
+    <br />
+    <hr />
+    <br />
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <p class="colortext">
+      This is another paragraph. ---------- Esse paragrafo tem a classe color
+      text
+    </p>
+    <p class="colortext">
+      This is also a paragraph. ---------- Esse paragrafo tem a classe color
+      text
+    </p>
+
+    <pre>
+        .colortext {
+            color: blue;
+        }
+    </pre>
+    <br />
+    <hr />
+    <br />
+    <div style="background-color: burlywood;">
+      <h1>This is a Heading</h1>
+      <p>This is a paragraph.</p>
+      <p>This is another paragraph.</p>
+    </div>
+    <br><hr><br>
+    <strong>Exercicio 1 - CSS background w3schools</strong>
+    <a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_background1">AQUI</a>
+  </body>
 </html>
