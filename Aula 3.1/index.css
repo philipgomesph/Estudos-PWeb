@@ -1,0 +1,21 @@
+
+/* Aqui mudo todos que sao section para a cor azul */
+section p {
+    color: blue;
+}
+
+
+/* Muda todos os filhos diretos de "section" para o fundo amarelo*/
+section > p {
+background-color: yellow;
+}
+
+/* Escolhe o irmao adjacente de de h2  */
+h2 + p {
+    text-transform: uppercase;  /* Coloca em maiscula  */
+}
+
+/* Selecionar o irmao geral de h2*/
+h2 ~ p {
+    border: 1px dashed black; /*borda */
+}
