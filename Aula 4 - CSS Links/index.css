@@ -10,6 +10,16 @@ p{
     color: blue;
 }
 
+body
+{
+  background-color: linen;
+}
 
+h1{
+  background-color: lightblue;
+}
 
-.colortext
+.div.test
+{
+  background-color: orange;
+}

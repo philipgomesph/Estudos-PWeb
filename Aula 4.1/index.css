@@ -1,0 +1,12 @@
+/*body {
+  background-image: url("https://enotas.com.br/blog/wp-content/uploads/2021/02/GitHub.jpg");
+  background-repeat: repeat-y;
+  background-position: top center;
+}
+
+*/
+body
+{
+    background: url("https://enotas.com.br/blog/wp-content/uploads/2021/02/GitHub.jpg") no-repeat top right;
+
+}
