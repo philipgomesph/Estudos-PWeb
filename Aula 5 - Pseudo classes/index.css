@@ -1,0 +1,37 @@
+ul {
+  padding: 0; /* TIRA O ESPAÇO */
+}
+
+li {
+  padding: 3px; /* Aumenta o espasamento  */
+  margin-bottom: 5px; /* margem de cima pra baixo  */
+  list-style: none; /* tira o estilo do link */
+}
+
+a/* TUDO QUE É LINK */ {
+  text-decoration: none; /* tira a decoração do link */
+  color: red;
+}
+
+
+
+a:hover  /* HOVER =  Passar o mouse */
+{
+    text-decoration: underline; /*coloca linha em baixo do texto*/
+    color: royalblue;
+}
+
+.br:hover
+{
+    text-decoration: underline; /*coloca linha em baixo do texto*/
+    color: green ;
+}
+
+li:nth-of-type(even ){
+    background-color: rosybrown;
+}
+
+li:nth-of-type(odd):hover{
+    background-color: violet;
+
+}
