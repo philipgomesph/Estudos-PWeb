@@ -1,0 +1,27 @@
+section {
+  border: 1px solid royalblue; 
+  width: 93%;
+  height: 240px;
+  margin: 20px auto;
+  background:slategrey;
+  display:flex;
+
+}
+
+
+div {
+    color: orange;
+    background: rgb(84, 90, 97);
+    text-shadow: 1px 1px 1px black;
+    margin-right: 25px;
+    flex: 1;   /* Distribui automaticamente toda a pagina entre as div's*/
+}
+
+div , section{
+    border: 2px solid rgba(199, 21, 134, 0.493);
+    padding: 10px;
+}
+
+.especial{
+    flex: 2;
+}
