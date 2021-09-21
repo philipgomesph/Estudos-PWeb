@@ -1,3 +1,9 @@
+html
+{
+    font-family: sans-serif;
+    
+}
+/*
 #cabeca{
      
     width: 100%;
@@ -27,4 +33,34 @@ section{
     margin-right: 100vh;
     background-color: blue;
     
+}*/
+
+
+
+#cabeca{
+    width: 100%;
+    display: flex;
+    background:rgb(73, 2, 131);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+    /* altua da linha ( tamanho do bloco em altura) */
+    line-height: 2;
+
+    /* Justifica o espaçamento */
+    justify-content: space-around;
+
+        /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+
+    flex-wrap: wrap;
+
+}
+
+body{
+    
+    /* Faz com que tome todo o espaço da pagina */
+    margin:0px !important;
+   padding: 0px !important;
 }
