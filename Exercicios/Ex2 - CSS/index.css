@@ -1,0 +1,30 @@
+#cabeca{
+     
+    width: 100%;
+    height: 88px;
+    margin-left:-200 ;
+    padding: -200;
+    background:rgb(73, 2, 131);
+    display:flex; 
+    
+}
+
+
+div{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-right: 25px;
+    flex: 1;
+}
+body{
+    background-color: rgb(82, 11, 70);
+    margin:0px !important;
+   padding: 0px !important;
+    
+}
+
+section{
+    margin-right: 100vh;
+    background-color: blue;
+    
+}

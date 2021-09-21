@@ -1,5 +1,5 @@
 /*  PARTE A  */
-/*
+
 p {
     animation-duration: 3s;
     animation-name: slidein;
@@ -15,10 +15,10 @@ p {
         width: 100%;
     }
 }
-*/
+
 
 /*  PARTE B  */
-/*
+
 @keyframes slidein {
     from {
         margin-left: 100%;
@@ -34,23 +34,23 @@ p {
         width: 100%;
     }
 }
-*/
+
 
 /*  PARTE C  */
-/*
+
 p {
     animation-duration: 3s;
     animation-name: slidein;
     animation-iteration-count: infinite;
 }
-*/
+
 
 /*  PARTE D  */
-/*
+
 p {
     animation-duration: 3s;
     animation-name: slidein;
     animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
-*/
+

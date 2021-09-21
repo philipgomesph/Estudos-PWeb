@@ -11,6 +11,7 @@ section {
 
 div {
     color: orange;
+    color: #0669DE;
     background: rgb(84, 90, 97);
     text-shadow: 1px 1px 1px black;
     margin-right: 25px;
@@ -20,8 +21,4 @@ div {
 div , section{
     border: 2px solid rgba(199, 21, 134, 0.493);
     padding: 10px;
-}
-
-.especial{
-    flex: 2;
 }
