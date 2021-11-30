@@ -1,0 +1,175 @@
+
+header{
+    background-color: #2f9e41;
+    margin: 0;
+    border: 0;
+    /* padding: -1; */ 
+    width: 100%;
+    height: 100%;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.grid_cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.cabecalhoBotoes
+{
+   display: flex;
+   
+}
+.cabecalhoBotoes div {
+    height: 70px;
+    width: 45px;
+    background-position: 45% 0;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+.email_hover {
+    background-image: url("icon_toolbar/toolbar_email_hover.png");  
+}
+.biblioteca_houver{
+    background-image: url("icon_toolbar/toolbar_biblioteca_hover.png");
+}
+.cadeado_houver{
+    background-image: url("icon_toolbar/toolbar_cadeado_hover.png");
+}
+.alerta_houver{
+    background-image: url("icon_toolbar/toolbar_alerta_hover.png");
+}
+.icone_IF img{
+    /* flex: 1; */
+    /* background-color: blue; */
+    padding: 8px 0;
+}
+.area_User{
+    display: flex;
+    padding-right: 10px;
+    /* flex: 1; */
+    /* background-color: tomato; */
+    align-items: flex-end;
+    text-align: end;
+}
+
+.flex{
+    display: flex;
+}
+
+.area_User_texto{
+    color: white;
+}
+
+
+
+
+
+.modulo_ae{
+    /* grid-area: ae; */
+    background: #64B2B2;
+}
+
+.modulo_beec{
+    /* grid-area: beec; */
+    background:#CA2C2D;
+}
+
+.modulo_dv{
+    /* grid-area: dv; */
+    background:#CA2C2D;
+}
+
+.modulo_estudante{
+    /* grid-area: estu; */
+    background:#CA2C2D;
+}
+
+.modulo_evento{
+    /* grid-area:event; */
+    background:#64B2B2;
+}
+.modulo_gss{
+    /* grid-area:gss; */
+    background:#2E7EA3;
+}
+.modulo_mural{
+    /* grid-area: mural; */
+    background:#CA2C2D;
+}
+.modulo_not{
+    /* grid-area: not; */
+    background:#2E7EA3;
+}
+.modulo_QI{
+   /* grid-area: qi; */
+   background:#CA2C2D;
+}
+.modulo_sofia{
+    /* grid-area: sofia; */
+    background:#CA2C2D;
+}
+.modulo_vot{
+    /* grid-area: vot; */
+    background:#818f96;
+}
+.article{
+    align-items: initial;
+}
+.carrocel{
+    align-items: center;
+}
+.img{
+    border: 0;
+}
+
+
+
+
+/* Boostrap */
+
+
+/* .container{
+    padding: 0;
+    margin: 0;
+} */
+
+
+
+.card-itens{
+    width:300px ;
+    height: 74px;
+}
+
+@media all and (max-width: 976px) {
+    /* .area_User {
+        float: left;
+        width: 80%;
+    } */
+    .grid_cabecalho{
+        background-color: tomato;
+    }
+    .area_User{
+        margin: 0.3em 0em 0 0.5em;
+    }
+}
+
+
+
+
+
+@media all and (max-width: 752px) {
+    /* .area_User {
+        float: left;
+        width: 80%;
+    } */
+    .grid_cabecalho{
+        background-color: hotpink;
+    }
+    .area_User{
+        margin: 0.3em 0em 0 0.5em;
+    }
+}
