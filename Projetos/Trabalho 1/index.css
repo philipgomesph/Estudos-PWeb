@@ -23,7 +23,7 @@ body{
    display: flex;
    
 }
-.cabecalhoBotoes div {
+.cabecalhoBotoes div , .cabecalhoBotoes2 div {
     height: 70px;
     width: 45px;
     background-position: 45% 0;
@@ -81,6 +81,13 @@ body{
 .modulo_dv{
     /* grid-area: dv; */
     background:#CA2C2D;
+    
+}
+.max-width-modulo .col{
+    max-width: 300px !important;
+    min-width: 300px !important;
+    margin: 3px;
+
 }
 
 .modulo_estudante{
@@ -126,8 +133,19 @@ body{
     border: 0;
 }
 
+.fonte{
+    color: white;
+    display: flex;
+}
 
+.card-itens p{
+    font-size: 15px;
+}
 
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+.modulo {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 /* Boostrap */
 
@@ -140,8 +158,21 @@ body{
 
 
 .card-itens{
-    width:300px ;
+    
     height: 74px;
+}
+.cabecalhoBotoes2{
+    display: none;
+}
+
+
+.cabecalhoBotoes2 div{
+    margin: 0 3.5vw;
+    height: 35px;
+    background-position: 45% -18px;
+}
+.icone_IF_mini{
+    display: none;
 }
 
 @media all and (max-width: 976px) {
@@ -149,17 +180,22 @@ body{
         float: left;
         width: 80%;
     } */
-    .grid_cabecalho{
-        background-color: tomato;
+    .area_User_texto{
+        display: none;
     }
+    
     .area_User{
         margin: 0.3em 0em 0 0.5em;
     }
+    .cabecalhoBotoes{
+        display: none;
+    }
+    .cabecalhoBotoes2{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
 }
-
-
-
-
 
 @media all and (max-width: 752px) {
     /* .area_User {
@@ -172,4 +208,11 @@ body{
     .area_User{
         margin: 0.3em 0em 0 0.5em;
     }
+    .icone_IF_mini{
+        display: block;
+    }
+    #cabecalho_topo{
+        display: none;
+    }
+
 }
