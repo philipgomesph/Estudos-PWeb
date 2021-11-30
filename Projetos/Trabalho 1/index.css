@@ -195,6 +195,9 @@ body{
         justify-content: center;
         align-items: center;   
     }
+    .icone_IF{
+        margin-left: 4em;
+    }
 }
 
 @media all and (max-width: 752px) {
