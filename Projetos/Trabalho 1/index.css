@@ -6,17 +6,23 @@ header{
     /* padding: -1; */ 
     width: 100%;
     height: 100%;
+    font-size: 15px;
 
 }
 body{
     padding: 0;
     margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
 .grid_cabecalho{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+}
+.nome_User{
+    font-weight: bold;
 }
 .cabecalhoBotoes
 {
@@ -54,6 +60,7 @@ body{
     /* background-color: tomato; */
     align-items: flex-end;
     text-align: end;
+    
 }
 
 .flex{
@@ -62,6 +69,8 @@ body{
 
 .area_User_texto{
     color: white;
+    font-size: 1em;
+    padding-right: 15px;
 }
 
 
@@ -126,16 +135,29 @@ body{
 .article{
     align-items: initial;
 }
-.carrocel{
-    align-items: center;
+.img_Carrocel{
+    position: relative;
+    
 }
 .img{
     border: 0;
 }
 
+.img_fonte{
+    position: absolute;
+}
 .fonte{
     color: white;
     display: flex;
+    margin: -1px;
+    padding: 0; ;
+    border: 0;
+    position: relative;
+    /* right: 10px; */
+    left: 80px;
+    top: 10px;
+    text-align: start;
+    text-decoration: none;
 }
 
 .card-itens p{
@@ -175,6 +197,35 @@ body{
     display: none;
 }
 
+.rodape{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    padding: 15px;
+}
+.rodape_esquerda{
+    text-align: left;
+}
+.rodape_direita{
+    text-align: right;
+}
+
+.col{
+    flex: 1 0 0%;
+}
+
+.w-100{
+    display: none;
+}
+
+.botao_sair{
+    display: none;
+    background-color: #2f9e41;
+    color: #2f9e41;
+}
+
+
+
 @media all and (max-width: 976px) {
     /* .area_User {
         float: left;
@@ -198,6 +249,9 @@ body{
     .icone_IF{
         margin-left: 4em;
     }
+    .botao_sair{
+        display: block;
+    }
 }
 
 @media all and (max-width: 752px) {
@@ -205,9 +259,7 @@ body{
         float: left;
         width: 80%;
     } */
-    .grid_cabecalho{
-        background-color: hotpink;
-    }
+    
     .area_User{
         margin: 0.3em 0em 0 0.5em;
     }
@@ -216,6 +268,18 @@ body{
     }
     #cabecalho_topo{
         display: none;
+    }
+   
+    .rodape_esquerda{
+        text-align: center;
+        padding: 15px;
+    }
+    .rodape_direita{
+        text-align: center;
+        padding: 15px;
+    }
+    .w-100{
+        display:block;
     }
 
 }
